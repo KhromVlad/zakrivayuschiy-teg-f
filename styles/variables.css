@@ -4,7 +4,7 @@
   --font-family: 'Inter', sans-serif;
   --secondary-font-family: 'PressStart2P', sans-serif;
   --font-weight: 400;
-  --title-font-weight: 785;
+  --title-font-weight: 700;
   --main-background-color: #ffffff;
   --accent-color: #000000;
   --floppy-color: #ffffff;
@@ -16,8 +16,7 @@
   --countour-icon: #000000;
   --countour-background: #ff0000;
   --heart-color: #ff0000;
-  --font-size: 
-  font-size: clamp(49px, 2.7104rem + 1.5023vw, 65px);
+  --font-size: clamp(49px, 2.7104rem + 1.5023vw, 65px);
 }
 
 

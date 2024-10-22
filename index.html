@@ -13,14 +13,13 @@
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="icon" href="./svg/favicon.svg" sizes="any" />
     <link rel="icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <div class="header-name-group">
-        <h1 class="header-title">&lt;/html&gt;</h1>
-        <h2 class="header-name">Закрывающий тег</h2>
-      </div>
+      <a class="header-title" href="#0">&lt;/html&gt;</a>
+      <p class="header-name">Закрывающий тег</p>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -48,18 +47,19 @@
       </nav>
     </header>
     <main class="main">
-      <section class="main__card">
+      <article class="main__card">
         <h2 class="main__card-title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
-        <div class="main__card-image">
+        <figure class="main__card-image">
           <img
             src="./images/image_card.png"
             alt="автобус"
             class="main__card-image-img"
+            loading="lazy"
           />
-          <p class="main__card-image-text">&lt;/html&gt;</p>
-        </div>
+          <figcaption class="main__card-image-text">&lt;/html&gt;</figcaption>
+        </figure>
         <div class="main__card-text">
           <p class="main__card-text-info">
             Это было самое начало пути. На этом этапе важно было проникнуться
@@ -70,7 +70,7 @@
             Место для ваших воспоминаний о начале обучения.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button is-liked">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -105,33 +105,40 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button painting">
+            <button
+              class="card__like-button painting"
+              type="button"
+              aria-label="Лайк"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
-        <h2 class="main__card-title">
-          1 спринт: Я — чистый лист
-        </h2>
-        <div class="main__card-image">
+      </article>
+      <article class="main__card">
+        <h2 class="main__card-title">1 спринт: Я — чистый лист</h2>
+        <figure class="main__card-image">
           <img
             src="./images/image_card.png"
             alt="автобус"
             class="main__card-image-img filter-brightness"
+            loading="lazy"
           />
-          <p class="main__card-image-text">&lt;/html&gt;</p>
-        </div>
+          <figcaption class="main__card-image-text">&lt;/html&gt;</figcaption>
+        </figure>
         <div class="main__card-text">
           <p class="main__card-text-info">
-            На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?
+            На первых этапах мы работали со страхами и сомнениями, которые часто
+            испытывают новички. Один из них — страх перед чистым листом. Это,
+            конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим
+            ощущением скрываются более глубокие вопросы: с чего начать? а вдруг
+            будет слишком сложно? что, если я не справлюсь?
           </p>
           <p class="main__card-text-info">
             Место для ваших воспоминаний о начале первого спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button is-liked">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -166,33 +173,38 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button painting">
+            <button
+              class="card__like-button painting"
+              type="button"
+              aria-label="Лайк"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
-        <h2 class="main__card-title">
-          1 спринт: А если не получится?
-        </h2>
-        <div class="main__card-image">
+      </article>
+      <article class="main__card">
+        <h2 class="main__card-title">1 спринт: А если не получится?</h2>
+        <figure class="main__card-image">
           <img
             src="./images/image_card.png"
             alt="автобус"
             class="main__card-image-img filter-contrast"
+            loading="lazy"
           />
-          <p class="main__card-image-text">&lt;css&gt;</p>
-        </div>
+          <figcaption class="main__card-image-text">&lt;css&gt;</figcaption>
+        </figure>
         <div class="main__card-text">
           <p class="main__card-text-info">
-            Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
+            Первый проект — позади! Но это всё ещё самое начало пути. Радость
+            могла быстро померкнуть и смениться ожиданием провала. Или вы,
+            наоборот, могли вдохновиться успехами и поверить в себя.
           </p>
           <p class="main__card-text-info">
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button is-liked">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -227,33 +239,42 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button painting">
+            <button
+              class="card__like-button painting"
+              type="button"
+              aria-label="Лайк"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
-        <h2 class="main__card-title">
-          2 спринт: Погоня за идеалом
-        </h2>
-        <div class="main__card-image">
+      </article>
+      <article class="main__card">
+        <h2 class="main__card-title">2 спринт: Погоня за идеалом</h2>
+        <figure class="main__card-image">
           <img
             src="./images/image_card.png"
             alt="автобус"
             class="main__card-image-img filter-sepia"
+            loading="lazy"
           />
-          <p class="main__card-image-text">&lt;desigions&gt;</p>
-        </div>
+          <figcaption class="main__card-image-text text-low">
+            &lt;desigions&gt;
+          </figcaption>
+        </figure>
         <div class="main__card-text">
           <p class="main__card-text-info">
-            На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.
+            На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
+            понять, как много ещё впереди. Вы могли попытаться погнаться за
+            идеалом и понять, что он недостижим. А, может, вы вовсе и не
+            подвержены перфекционизму и вместо того, чтобы сделать идеально,
+            старались просто сделать.
           </p>
           <p class="main__card-text-info">
             Место для ваших воспоминаний о начале второго спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button is-liked">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -288,33 +309,41 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button painting">
+            <button
+              class="card__like-button painting"
+              type="button"
+              aria-label="Лайк"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
-        <h2 class="main__card-title">
-          2 спринт: О тех, кто рядом
-        </h2>
-        <div class="main__card-image">
+      </article>
+      <article class="main__card">
+        <h2 class="main__card-title">2 спринт: О тех, кто рядом</h2>
+        <figure class="main__card-image">
           <img
             src="./images/image_card.png"
             alt="автобус"
             class="main__card-image-img filter-opacity"
+            loading="lazy"
           />
-          <p class="main__card-image-text">care</p>
-        </div>
+          <figcaption class="main__card-image-text text-low">care</figcaption>
+        </figure>
         <div class="main__card-text">
           <p class="main__card-text-info">
-            Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, не правда ли?
+            Всё это время вы были не одиноки (хотя, возможно, иногда и
+            чувствовали, что одни против целого мира). Вас окружали
+            одногруппники, команда сопровождения и просто близкие люди, которым
+            можно пожаловаться, если очередной макет просто так не поддавался.
+            Осваивать что-то новое легче, когда рядом есть единомышленники, не
+            правда ли?
           </p>
           <p class="main__card-text-info">
             Место для ваших воспоминаний об окончании второго спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button is-liked">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -349,33 +378,40 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button painting">
+            <button
+              class="card__like-button painting"
+              type="button"
+              aria-label="Лайк"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
-        <h2 class="main__card-title">
-          3 спринт: Обходные стратегии
-        </h2>
-        <div class="main__card-image">
+      </article>
+      <article class="main__card">
+        <h2 class="main__card-title">3 спринт: Обходные стратегии</h2>
+        <figure class="main__card-image">
           <img
             src="./images/image_card.png"
             alt="автобус"
             class="main__card-image-img filter-grayscale"
+            loading="lazy"
           />
-          <p class="main__card-image-text">&lt;support&gt;</p>
-        </div>
+          <figcaption class="main__card-image-text text-low">
+            &lt;support&gt;
+          </figcaption>
+        </figure>
         <div class="main__card-text">
           <p class="main__card-text-info">
-            На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.
+            На этом курсе вы постоянно решали разные задачи. В какой-то момент
+            вам могло показаться, что решения просто иссякли. Значит, пришло
+            время посмотреть на задачу под другим углом.
           </p>
           <p class="main__card-text-info">
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button is-liked">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -410,33 +446,42 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button painting">
+            <button
+              class="card__like-button painting"
+              type="button"
+              aria-label="Лайк"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
-        <h2 class="main__card-title">
-          3 спринт: Когда опускаются руки
-        </h2>
-        <div class="main__card-image">
+      </article>
+      <article class="main__card">
+        <h2 class="main__card-title">3 спринт: Когда опускаются руки</h2>
+        <figure class="main__card-image">
           <img
             src="./images/image_card.png"
             alt="автобус"
             class="main__card-image-img filter-saturate"
+            loading="lazy"
           />
-          <p class="main__card-image-text">&lt;lifes-style: none;&gt;</p>
-        </div>
+          <figcaption class="main__card-image-text text-low">
+            &lt;lifes-style: none;&gt;
+          </figcaption>
+        </figure>
         <div class="main__card-text">
           <p class="main__card-text-info">
-            Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.
+            Во время учёбы часто возникает чувство, когда не знаешь, за что
+            хвататься. Вроде и проектную пора сдавать, и задачи хочется
+            порешать, и в теории получше разобраться, и жизнь не забыть пожить.
+            В такие моменты очень нужна концентрация. Вспомните, откуда вы её
+            черпали.
           </p>
           <p class="main__card-text-info">
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button is-liked">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -471,33 +516,44 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button painting">
+            <button
+              class="card__like-button painting"
+              type="button"
+              aria-label="Лайк"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
-        <h2 class="main__card-title">
-          «Сейчас я здесь»
-        </h2>
-        <div class="main__card-image">
+      </article>
+      <article class="main__card">
+        <h2 class="main__card-title">«Сейчас я здесь»</h2>
+        <figure class="main__card-image">
           <img
             src="./images/image_card.png"
             alt="автобус"
             class="main__card-image-img filter-rotate"
+            loading="lazy"
           />
-          <p class="main__card-image-text">&lt;experience&gt;</p>
-        </div>
+          <figcaption class="main__card-image-text text-low">
+            &lt;experience&gt;
+          </figcaption>
+        </figure>
         <div class="main__card-text">
           <p class="main__card-text-info">
-            Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.
+            Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
+            Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
+            окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И
+            этот мир постоянно меняется. Познать его полностью не получится, но
+            это тот случай, когда важен сам процесс познания. Ведь часто путь —
+            и есть результат.
           </p>
           <p class="main__card-text-info">
-            Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
+            Место, чтобы остановиться, подумать и написать, что вы чувствуете в
+            этой точке пути.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button is-liked">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -532,15 +588,33 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button painting">
+            <button
+              class="card__like-button painting"
+              type="button"
+              aria-label="Лайк"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
+      </article>
+      <section class="footer">
+        <button
+          class="footer_button painting"
+          type="button"
+          onclick="window['dialog-id'].showModal()"
+          aria-controls="dialog-id"
+          aria-label="Сохранить на память"
+        >
+          <svg class="icon footer-icon" viewbox="0 0 21 21">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text"> Сохранить на память </span>
+        </button>
       </section>
       <dialog id="dialog-id" class="page__window">
         <div class="page__window-info">
-          <svg class="icon" viewbox="0 0 21 21">
+          <svg class="window-icon icon" viewbox="0 0 21 21">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class="page__window-text"
@@ -548,25 +622,16 @@
           >
         </div>
         <form method="dialog">
-          <button class="page__window-button painting">
+          <button
+            class="page__window-button painting"
+            type="submit"
+            aria-label="Ок"
+          >
             <span class="page__window-button-text button__text">Ок</span>
           </button>
         </form>
       </dialog>
     </main>
-    <footer class="footer">
-      <button
-        class="footer_button painting"
-        type="button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
-      >
-        <svg class="icon" viewbox="0 0 21 21">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text"> Сохранить на память </span>
-      </button>
-    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
