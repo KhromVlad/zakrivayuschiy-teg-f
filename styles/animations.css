@@ -39,13 +39,3 @@
     padding-right: 4px;
   }
 }
-
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.6;
-  }
-}
